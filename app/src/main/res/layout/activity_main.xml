@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degradado"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="207dp"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0">
+
+        <ImageView
+            android:id="@+id/icono"
+            android:layout_width="151dp"
+            android:layout_height="151dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/iconomundo" />
+
+        <TextView
+            android:id="@+id/travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="92dp"
+            android:text="Travel"
+            android:textColor="@color/orange"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/nombre_lugar"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="90dp"
+            android:hint="Nombre del lugar"
+            android:inputType="textMultiLine"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/nombre_ciudad"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="75dp"
+            android:hint="Nombre de la ciudad"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/nombre_pais"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="157dp"
+            android:hint="Nombre del pais"
+            android:inputType="textMultiLine" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/boton_siguiente"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/lime"
+        android:text="Siguiente"
+        android:textColor="@color/light_yellow"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
